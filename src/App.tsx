@@ -7,6 +7,7 @@ import {
 
 import { Navbar } from './app/Navbar';
 import PostsList from './features/posts/PostsList';
+import AddPostForm from './features/posts/AddPostForm';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ export default App;
 function Home() {
   return (
     <section>
+      <AddPostForm />
       <PostsList />
     </section>
   );
