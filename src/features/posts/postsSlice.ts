@@ -1,6 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = [
+interface PostsProps {
+  id: string;
+  title: string;
+  content: string;
+}
+
+const initialState: PostsProps[] = [
   { id: '1', title: 'First Post!', content: 'Hello!' },
   { id: '2', title: 'Second Post', content: 'More text' },
 ];
@@ -11,4 +17,4 @@ const postSlice = createSlice({
   reducers: {},
 });
 
-export default postSlice.reducer
+export default postSlice.reducer;

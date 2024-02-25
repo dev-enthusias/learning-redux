@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import { Navbar } from './app/Navbar';
+import PostsList from './features/posts/PostsList';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function Home() {
   return (
     <section>
       <h2>Welcome to the Redux Essentials example app!</h2>
+      <PostsList />
     </section>
   );
 }
